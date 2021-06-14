@@ -1,0 +1,37 @@
+.header-properties {
+    background-color: #FFF0ED;
+}
+.feature-product{
+    background-color: #FFF0ED;
+}
+.product-img{
+    min-height: 15rem;
+    max-height: 34.375rem;
+}
+.product-price{
+    color: #5BACC3;
+}
+.discount-banner{
+    min-width: fit-content;
+    max-width: 90%;
+    background-color: #393939;
+    color:white;
+    text-align: center;
+}
+.footer-properties{
+    background-color: #FFF0ED;
+}
+.button-properties{
+    background-color: #5BACC3;
+    padding: 1rem 1.25rem;
+    min-width: 11.25rem;
+    max-width: 80%;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.313rem;
+    font-weight: 300;
+}
+li{
+    list-style-type: none;
+}

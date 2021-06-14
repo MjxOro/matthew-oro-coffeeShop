@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Open Sans';
+}
+h1,h2{
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+.nav-heading{
+	padding: 0 0 1rem 0;
+}
+h3,.nav-heading{
+    font-size: 2.063rem;
+    font-weight: 300;
+}
+.nav-links{
+    font-size: 1.3125rem;
+    font-weight: 400;
+}
+.ptext-regular{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.ptext-regular-italic{
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+}
