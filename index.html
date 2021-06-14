@@ -25,44 +25,54 @@
 		<div class = "hero__block">
 			<h1 class = "hero__block__title">Nitro Coffee</h1>
 			<p class = "hero__block__info">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of coffea species. </p>
-			<a href ="./pages/menu.html"><button type="submit" class = "btn">SHOP NOW</button></a>
+			<a href ="./pages/menu.html" class = "btn">
+				<span class = "">SHOP NOW</span>
+			</a>
 			<img src="./Assets/coffeebeans-hero.png" alt="hero picture" class = "hero__block__img">
 		</div>
-		<div class = "main__content">
-			<h2 class = "main__content__title">Our Products</h2>
-			<img src="./Assets/coffeebeans.png" alt="coffee beans" class = "product-img">
-			<p class = "product-description">Coffee Beans</p>
-			<p class = "product-price">$18.99</p>
-			<img src="./Assets/coldbrew.png" alt="cold brew" class = "product-img">
-			<p class = "product-description">Cold Brew</p>
-			<p class = "product-price">$4.99</p>
-			<img src="./Assets/inhousebrew.png" alt="in-house brew" class = "product-img">
-			<p class = "product-description">In-house Brew</p>
-			<p class = "product-price">$2.99</p>
-		</div>
-		<div class = "promo-section">
-			<a href ="./pages/menu.html"><button type="submit" class = "button-properties">VIEW ALL</button></a>
-			<div class = "promo-container">
-				<h3 class = discount-banner>Get 20% off your first order with code: <b>FirstNitro</b></h3>
+		<div class = "mc">
+			<h2 class = "mc__title">Our Products</h2>
+			<div class = "mc__card">
+				<img src="./Assets/coffeebeans.png" alt="coffee beans" class = "mc__card__img">
+				<p class = "mc__card__info">Coffee Beans</p>
+				<p class = "mc__card__price">$18.99</p>
+			</div>
+			<div class "mc__card">
+				<img src="./Assets/coldbrew.png" alt="cold brew" class = "mc__card__img">
+				<p class = "mc__card__info">Cold Brew</p>
+				<p class = "mc__card__price">$4.99</p>
+			</div>
+			<div class = "mc__card">
+				<img src="./Assets/inhousebrew.png" alt="in-house brew" class = "mc__card__img">
+				<p class = "mc__card__info">In-house Brew</p>
+				<p class = "mc__card__price">$2.99</p>
 			</div>
 		</div>
+		<a href ="./pages/menu.html" class = "btn">
+			<span class = "">VIEW ALL</span>
+		</a>
+		<div class = "mc__promo">
+			<h3 class = "mc__promo__info">Get 20% off your first order with code: </h3>
+			<h3 class = "mc__promo__info--bold">FirstNitro</h3>
+		</div>
 	</main>
-	<footer class = "footer-properties">
-		<div>
-			<h3>Address</h3>
-			<p>503 Broadway Penthouse</p>
-			<p>New York</p>
+	<footer>
+		<div class = "ft">
+			<div class = "ft__info-block">
+				<h3 class = "ft__block-title">Address</h3>
+				<p class = "ft__info">503 Broadway Penthouse</p>
+				<p class = "ft__info">New York</p>
+			</div>
+		<div class = "ft__info-block">
+			<h3 class = "ft__block-title">Hours</h3>
+			<p class = "ft__info">Monday - Friday: 9am - 7pm</p>
+			<p class = "ft__info">Saturday - Sunday: 10am - 5pm</p>
 		</div>
-		<div>
-			<h3>Hours</h3>
-			<p>Monday - Friday: 9am - 7pm</p>
-			<p>Saturday - Sunday: 10am - 5pm</p>
-		</div>
-		<div>
-		<h3>Social</h3>
-			<a href="https://Facebook.com"><img src="./Assets/Facebook-Icon.svg" alt="facebook"></a>
-			<a href="https://Yelp.com"><img src="./Assets/Yelp-Icon.svg" alt="yelp"></a>
-			<a href="https://Instagram.com"><img src="./Assets/Instagram-Icon.svg" alt="instagram"></a>
+		<div class = "ft__info-block">
+			<h3 class = "ft__block-title">Social</h3>
+			<a href="https://Facebook.com"><img class = "ft__icon" src="./Assets/Facebook-Icon.svg" alt="facebook"></a>
+			<a href="https://Yelp.com"><img class = "ft__icon" src="./Assets/Yelp-Icon.svg" alt="yelp"></a>
+			<a href="https://Instagram.com"><img class = "ft__icon" src="./Assets/Instagram-Icon.svg" alt="instagram"></a>
 		</div>
 	</footer>
 </body>
