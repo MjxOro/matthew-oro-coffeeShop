@@ -44,16 +44,35 @@
 .hero__block{
 	background-color: #FFF0ED;
 	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5.5rem;
+}
+.hero__block__text-container{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-right: 38%;
+}
+.hero__block__title{
+	margin: 0;
+	font-size: 2.75rem;
+}
+.hero__block__info{
+	margin: 2rem 0;
+	
+
 }
 .btn__style{
     background-color: #5BACC3;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1rem;
     min-width: 11.25rem;
     max-width: 80%;
     outline: none;
     border: none;
     color: white;
-    font-size: 1.313rem;
+    font-size: 1rem;
     font-weight: 300;
 		display:inline-block;
 		text-align: center;
@@ -63,9 +82,14 @@
 	margin:  0;
 }
 .mc{
-	background-color: #FFFF;
+	background-color: #F7F7F7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 .mc__title{
+	font-size: 3rem;
 }
 .mc__card-container{
 	display: flex;
@@ -73,6 +97,7 @@
 	align-items: center;
 }
 .mc__card{
+	background-color: #FFFF;
 	width: 10.25rem;
 	height: 32.125rem;
 	margin: 0 2.25rem 2.5rem 2.25rem;
@@ -100,23 +125,23 @@
 	font-size: 1.25rem;
 	padding-top: 1rem;
 }
+.btn__style--mc{
+	margin: 2rem 0;
+}
 .mc__promo{
 	background-color: #393939;
 	max-height: max-content;
 	max-width: 90%;
 	color:white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 1rem;
+	height: 40px;
+	padding: 2rem 1rem;
+	text-align: center;
+	margin: 8rem 8rem;
 }
 .mc__promo__info{
 	font-size: 2rem;
 	margin: 0;
-}
-.mc__promo__info--bold{
-	font-weight: bold;
-	margin: 0;
+	width:inherit;
 }
 .header-properties {
     background-color: #FFF0ED;
@@ -140,6 +165,18 @@
 }
 .ft{
 	background-color: #FFF0ED;
+	display: flex;
+	justify-content: center;
+}
+.ft__info-block{
+	margin: 2rem 8rem;
+}
+.ft__info{
+	margin: 0;
+}
+.ft__icon{
+	min-width: 50px;
+	max-width: 120px;
 }
 .button-properties{
     background-color: #5BACC3;
