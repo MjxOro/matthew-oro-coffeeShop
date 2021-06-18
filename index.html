@@ -12,12 +12,12 @@
 <body>
 	<header>
 		<nav class = "nav__header">
-		<a href="index.html" class = "nav__header__company-logo"><img src="./Assets/coffee-beans-logo-and-footer.svg" alt="nitro logo"></a>
-		<h2 class = "nav__header__company-name">nitro</h2>
+		<a href="index.html" class = "nav__header__company-logo"><img class="nav__header-img"src="./Assets/coffee-beans-logo-and-footer.svg" alt="nitro logo"></a>
+		<h3 class = "nav__header__company-name">nitro</h3>
 		<ul class = "nav__header__links">
-			<li><a href="index.html">ABOUT</a></li>
-			<li><a href="./pages/menu.html">MENU</a></li>
-			<li><a href="./pages/menu.html">SHOP NOW</a></li>
+			<li><a class="nav__header__link-text" href="index.html">ABOUT</a></li>
+			<li><a class="nav__header__link-text" href="./pages/menu.html">MENU</a></li>
+			<li><a class="nav__header__link-text nav__header__link-text--blue" href="./pages/menu.html">SHOP NOW</a></li>
 		</ul>
 		</nav>
 	</header>
@@ -25,35 +25,38 @@
 		<div class = "hero__block">
 			<h1 class = "hero__block__title">Nitro Coffee</h1>
 			<p class = "hero__block__info">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of coffea species. </p>
-			<a href ="./pages/menu.html" class = "btn">
-				<span class = "">SHOP NOW</span>
-			</a>
+			<span class = "btn__style">SHOP NOW
+				<a href ="./pages/menu.html" class = "btn"></a>
+			</span>
 			<img src="./Assets/coffeebeans-hero.png" alt="hero picture" class = "hero__block__img">
 		</div>
 		<div class = "mc">
 			<h2 class = "mc__title">Our Products</h2>
-			<div class = "mc__card">
-				<img src="./Assets/coffeebeans.png" alt="coffee beans" class = "mc__card__img">
-				<p class = "mc__card__info">Coffee Beans</p>
-				<p class = "mc__card__price">$18.99</p>
+			<div class="mc__card-container">
+				<div class = "mc__card">
+					<img src="./Assets/coffeebeans.png" alt="coffee beans" class = "mc__card__img">
+					<p class = "mc__card__info">Coffee Beans</p>
+					<p class = "mc__card__price">$18.99</p>
+				</div>
+				<div class="mc__card">
+					<img src="./Assets/coldbrew.png" alt="cold brew" class = "mc__card__img mc__card__img--cold-brew">
+					<p class = "mc__card__info">Cold Brew</p>
+					<p class = "mc__card__price">$4.99</p>
+				</div>
+				<div class = "mc__card">
+					<img src="./Assets/inhousebrew.png" alt="in-house brew" class = "mc__card__img">
+					<p class = "mc__card__info">In-house Brew</p>
+					<p class = "mc__card__price">$2.99</p>
+				</div>
 			</div>
-			<div class "mc__card">
-				<img src="./Assets/coldbrew.png" alt="cold brew" class = "mc__card__img">
-				<p class = "mc__card__info">Cold Brew</p>
-				<p class = "mc__card__price">$4.99</p>
 			</div>
-			<div class = "mc__card">
-				<img src="./Assets/inhousebrew.png" alt="in-house brew" class = "mc__card__img">
-				<p class = "mc__card__info">In-house Brew</p>
-				<p class = "mc__card__price">$2.99</p>
+			<span class = "btn__style">VIEW ALL
+				<a href ="./pages/menu.html" class = "btn"></a>
+			</span>
+			<div class = "mc__promo">
+				<h3 class = "mc__promo__info">Get 20% off your first order with code: </h3>
+				<h3 class = "mc__promo__info--bold">FirstNitro</h3>
 			</div>
-		</div>
-		<a href ="./pages/menu.html" class = "btn">
-			<span class = "">VIEW ALL</span>
-		</a>
-		<div class = "mc__promo">
-			<h3 class = "mc__promo__info">Get 20% off your first order with code: </h3>
-			<h3 class = "mc__promo__info--bold">FirstNitro</h3>
 		</div>
 	</main>
 	<footer>
@@ -65,8 +68,8 @@
 			</div>
 		<div class = "ft__info-block">
 			<h3 class = "ft__block-title">Hours</h3>
-			<p class = "ft__info">Monday - Friday: 9am - 7pm</p>
-			<p class = "ft__info">Saturday - Sunday: 10am - 5pm</p>
+			<p class = "ft__info"><b>Monday - Friday:</b> 9am - 7pm</p>
+			<p class = "ft__info"><b>Saturday - Sunday:</b> 10am - 5pm</p>
 		</div>
 		<div class = "ft__info-block">
 			<h3 class = "ft__block-title">Social</h3>
