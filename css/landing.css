@@ -61,11 +61,15 @@
 }
 .hero__block__info{
 	margin: 2rem 0;
-	
+}
+.btn__border{
+	border: 0.2rem solid black;
+	position: relative;
 
 }
 .btn__style{
     background-color: #5BACC3;
+		position:relative;
     padding: 1rem 1rem;
     min-width: 11.25rem;
     max-width: 80%;
@@ -76,6 +80,8 @@
     font-weight: 300;
 		display:inline-block;
 		text-align: center;
+		top: 1rem;
+		left: 1rem;
 }
 .btn{
 	text-decoration: none;

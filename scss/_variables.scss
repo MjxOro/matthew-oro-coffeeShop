@@ -1,0 +1,22 @@
+// Colors
+$nBlue: #5BACC3;
+$nPink: #FFF0ED;
+$graphite: #393939;
+$gray: #909090;
+$lightGray:#F7F7F7;
+$white: #FFF;
+
+// Mixins
+@mixin min-max-width($min,$max){
+	min-width: $min;
+	max-width: $max;
+}
+
+@mixin min-max-height($min,$max){
+	min-height: $min;
+	max-height: $max;
+}
+@mixin text-style-setting($size,$weight){
+	font-size: $size;
+	font-weight: $weight;
+}

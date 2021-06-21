@@ -1,0 +1,105 @@
+@use 'variables' as v;
+
+
+html{
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*{
+	box-sizing: inherit;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+	// x-axis
+.flexbox{
+	display: flex;
+
+	&--justifyC-fs{
+		justify-content: flex-start;
+	}
+	&--justifyC-c{
+		justify-content: center;
+	}
+	&--justifyC-sb{
+		justify-content: space-between;
+	}
+	&--justifyC-sa{
+		justify-content: space-around;
+	}
+	&--justifyC-se{
+		justify-content: space-evenly;
+	}
+	&--align-center{
+		align-items: center;
+	}
+
+	// y-axis
+}
+.flexboxC{
+	flex-direction: column;
+	display: flex;
+
+	&--justifyC-c{
+		justify-content: center;
+	}
+	&--justifyC-sb{
+		justify-content: space-between;
+	}
+	&--justifyC-se{
+		justify-content: space-evenly;
+	}
+	&--align-center{
+		align-items: center;
+	}
+}
+.btn{
+	color: v.$white;
+	@include v.text-style-setting(1.313rem,400);
+	@include v.min-max-width(11.25rem,80%);
+	border: 0.2rem solid transparent;
+	display:block;
+	background: v.$nBlue;
+	width:8rem;
+	height:3rem;
+	text-align: center;
+	margin: 2rem 0;
+	padding-top: 0.75rem;
+
+	&-text{
+		text-decoration: none;
+		color: v.$white;
+	}
+}
+.btn::after{
+		@include v.min-max-width(11rem,80%);
+		display: block;
+		position: relative;
+		width:4rem;
+		height:2.7rem;
+		right: 1rem;
+		bottom: 2.8rem;
+		content:" ";
+		border: 0.18rem solid v.$graphite;
+		pointer-events: none;
+		transition: 65ms;
+	}
+.btn:active::after{
+		@include v.min-max-width(11rem,80%);
+		display: block;
+		position: relative;
+		width:4rem;
+		height:2.7rem;
+		right: 0.3rem;
+		bottom: 2.5rem;
+		content:" ";
+		border: 0.18rem solid v.$graphite;
+	}
+
+	
+header{
+	background-color: v.$nPink;
+}

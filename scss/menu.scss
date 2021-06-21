@@ -1,0 +1,101 @@
+@use 'variables' as v;
+@use 'global';
+@use 'header';
+
+// Style
+.hero{
+	&__bg{
+		margin:0;
+		background-image: url("../assets/coffee-circle.jpg");
+		background-size: cover;
+		background-position: center;
+		@include v.min-max-width(100%,100%);
+		@include v.min-max-height(35.938rem,37.5rem);
+		padding: 14rem 0;
+		&__tb{
+			@include v.min-max-width(17.5rem,18.75rem);
+			@include v.min-max-height(11.25rem,12.5rem);
+			background-color: v.$graphite;
+			margin:auto;
+			padding-top:3rem;
+			text-align: center;
+			&-txt{
+				color: v.$white;
+				@include v.text-style-setting(3.75,300);
+				margin:0;
+			}
+		}
+		&__tb::after{
+			display:block;
+			@include v.min-max-width(18.75em,18.75rem);
+			@include v.min-max-height(11.25rem,11.25rem);
+			content: " ";
+			border: 0.313rem solid v.$nBlue;
+			position:relative;
+			right:1.5rem;
+			bottom:9rem;
+			pointer-events: none;
+		}
+	}
+	&__nav{
+		@include v.min-max-width(100%,100%);
+		@include v.min-max-height(3.75rem,5rem);
+		background-color: v.$graphite;
+		text-align: center;
+		ul{
+			box-sizing: border-box;
+			display: inline;
+			margin:0;
+		}
+		&__links{
+			margin:  1.25rem 0;
+			border-left: 4px solid;
+			border-color: v.$nBlue;
+			display: inline-block;
+
+			&-text{
+				text-decoration: none;
+				color: white;
+				padding: 1.25rem ;
+				font-size: 1.313rem;
+			}
+		}
+	}
+}
+.menu{
+	&__block--pink{
+		background-color:v.$nPink;
+	}
+	&__block--grey{
+		background-color: v.$lightGray;
+	}
+	&__block{
+		&-cat{
+			@include v.text-style-setting(3.75rem,300);
+			text-align: center;
+			box-sizing: border-box;
+			padding:  0.67em;
+			margin: 0;
+		}
+		&-item{
+			@include v.text-style-setting(2.063rem,300);
+			text-align: center;
+			margin: 0;
+		}
+		&-desc{
+			max-width: 35%;
+			text-align: center;
+			@include v.text-style-setting(1.125rem,400);
+			font-style: italic;
+			margin: 0 auto;
+		}
+		&-price{
+			text-align: center;
+			color: v.$nBlue;
+			margin: 0;
+			padding: 0.25rem 0 1.75rem 0;
+		}
+	}
+}
+
+

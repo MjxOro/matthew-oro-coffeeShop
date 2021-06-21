@@ -1,0 +1,160 @@
+// @use connections
+@use 'variables' as v;
+@use 'global';
+@use 'header';
+@use 'footer';
+// keyframe
+@keyframes spin{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+	}
+// Styling
+
+.hero{
+	background-color: v.$nPink;
+	padding: 2rem 0 ;
+
+	&__text-block{
+		&-title{
+			@include v.text-style-setting(3.75rem,300);
+			margin: 2rem 0;
+		}
+		&-desc{
+			@include v.text-style-setting(1.125rem,400);
+			max-width: 50%;
+		}
+		&__btn{
+			margin: 2rem 0;
+				}
+	}
+	&__img{
+		@include v.min-max-height(15rem,34.375rem);
+	}
+		
+}
+
+.mc{
+	background-color: v.$lightGray;
+
+	&__title{
+		@include v.text-style-setting(3.75rem,300);
+		
+	}
+	&__card{
+		&-cont{
+			margin: 1.25rem;
+			background-color: v.$white;
+			@include v.min-max-width(20.625rem,21.875rem);
+			@include v.min-max-height(27.5rem,28.75rem);
+			border-radius: 0.625rem;
+			box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+			&__img{
+				margin: auto;
+				img{
+				@include v.min-max-height(15rem,34.375rem);
+				}
+			}
+			&__desc{
+				background-color: v.$nPink;
+				height: 25%;
+				&-name{
+					@include v.text-style-setting(1.875rem,300);
+					margin: auto;
+
+					&-qty{
+						@include v.text-style-setting(1.125rem,300);
+						color: v.$gray;
+						margin: 0 auto;
+					}
+
+				}
+				&-price{
+					@include v.text-style-setting(1.875rem,bold);
+					margin: auto;
+					color: v.$nBlue;
+				}
+			}
+		}
+	}
+	&__btn{
+		margin: 2rem 0;
+	}
+}
+
+.dtl{
+	margin:5rem;
+	&__info{
+		&-title{
+			@include v.text-style-setting(3.75rem,300);
+			margin:0
+		}
+		&-desc{
+			@include v.text-style-setting(1.125rem,300);
+			max-width: 75%;
+		}
+		&-icon{
+			margin: 2rem 0;
+			max-width: 75%;
+			img{
+				margin:0;
+				@include v.min-max-width(3.125rem,3.125rem);
+			}
+
+		}
+	}
+	&__img{
+		margin:0;
+
+		&-cont{
+			@include v.min-max-width(25rem,25rem);
+			@include v.min-max-height(25rem,25rem);
+			border:0.313rem transparent;
+			background-image: url("../assets/coldbrewbackground.png");
+			background-size: cover;
+
+			img{
+				@include v.min-max-height(15rem,34.375rem);
+				position: relative;
+				left: 6.5rem;
+				top: 3rem;
+
+			}
+		}
+		&-cont::after{
+			@include v.min-max-width(25rem,25rem);
+			@include v.min-max-height(25rem,25rem);
+			border:0.313rem solid v.$nBlue;
+			position: relative;
+			right:1.25rem;
+			bottom:19rem;
+		  content: " ";
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			pointer-events: none;
+		}
+		&-cont img:hover{
+			animation:spin 3s cubic-bezier(0, 0, 0, 0) infinite
+		}
+	}
+	&__promo{
+		max-width: 90%;
+		background-color: v.$graphite;
+		margin: 5rem;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		&-info{
+			color:v.$white;
+			@include v.text-style-setting(2.813rem,400);
+		}
+		&-code{
+			color:v.$white;
+			@include v.text-style-setting(2.813rem,700);
+		}
+
+	}
+}
+
+
+		

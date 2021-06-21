@@ -1,0 +1,64 @@
+@use 'variables' as v;
+@use 'global';
+
+// Style
+
+.ft{
+	background-color: v.$nPink;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	&__block{
+		margin-right: 10%;
+		margin-bottom: 3rem;
+		&-title{
+			@include v.text-style-setting(2.063rem,300);
+		}
+		&-info{
+			@include v.text-style-setting(1.125rem,300);
+			margin: 0;
+		}
+		&-icon{
+			@include v.min-max-width(2.5rem,2.5rem);
+		}
+		&-box{
+			&__info{
+				@include v.text-style-setting(1.125rem,300);
+				margin: 0;
+
+			}
+			&__info--bold{
+				@include v.text-style-setting(1.125rem,bold);
+				margin: 0;
+
+			}
+		}
+
+	}
+	&__icon{
+		margin:0;
+		padding: 0;
+		img{
+			margin:0;
+			@include v.min-max-width(6rem,6rem);
+			opacity:0.3;
+			overflow: hidden;
+			padding: 0;
+			position: relative;
+		}
+	}
+	&__icon-left{
+		img{
+			top:-2rem;
+			left:-2rem;
+		}
+	}
+	&__icon-right{
+		img{
+			top:2rem;
+			right:-2rem;
+		}
+
+	}
+}
+

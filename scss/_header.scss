@@ -1,0 +1,48 @@
+@use 'variables' as v;
+@use 'global';
+
+// Header
+.header{
+
+	&__logo{
+		text-decoration: none;
+		color: v.$graphite;
+
+		&-img{
+			@include v.min-max-width(3.75rem,7.5rem);
+			width: 45px;
+			height: 45px;
+		}
+		
+		&-title{
+			@include v.text-style-setting(2.063rem,300);
+			text-align: center;
+		}
+	}
+
+	&__logo:active,&__logo:visited{
+		color: v.$graphite;
+	}
+
+	&__nav{
+		margin: 0;
+
+		&-list{
+			list-style-type: none;
+			margin: 1.75rem 0 ;
+			padding: 0 2rem ;
+			text-align: center;
+
+			&-text{
+				text-decoration: none;
+				color: v.$graphite;
+				
+			}
+			&-text--nblue{
+				text-decoration: none;
+				color: v.$nBlue;
+			}
+			
+		}
+	}
+}

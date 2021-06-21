@@ -1,85 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-	<title>Coffee Shop - Home</title>
-	<link rel="stylesheet" href="./css/global.css">
-	<link rel="stylesheet" href="./css/landing.css">
-
+	<link href="https://fonts.googleapis.com/css2?family=open+sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<title>coffee shop - home</title>
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<header>
-		<nav class = "nav__header">
-		<a href="index.html" class = "nav__header__company-logo"><img class="nav__header-img"src="./Assets/coffee-beans-logo-and-footer.svg" alt="nitro logo"></a>
-		<h3 class = "nav__header__company-name">nitro</h3>
-		<ul class = "nav__header__links">
-			<li><a class="nav__header__link-text" href="index.html">ABOUT</a></li>
-			<li><a class="nav__header__link-text" href="./pages/menu.html">MENU</a></li>
-			<li><a class="nav__header__link-text nav__header__link-text--blue" href="./pages/menu.html">SHOP NOW</a></li>
-		</ul>
+
+	<header class="flexbox flexbox--justifyC-sb flexbox--align-center">
+		<a href="index.html" class = "header__logo flexbox flexbox--fustifyC-fs flexbox--align-center">
+			<img class="header__logo-img"src="./assets/coffee-beans-logo-and-footer.svg" alt="nitro logo">
+			<h3 class = "header__logo-title">nitro</h3>
+		</a>
+		<nav>
+			<ul class = "header__nav flexbox flexbox--justifyC-fs ">
+				<li class="header__nav-list"><a class="header__nav-list-text" href="index.html">ABOUT</a></li>
+				<li class="header__nav-list"><a class="header__nav-list-text" href="./pages/menu.html">MENU</a></li>
+				<li class="header__nav-list"><a class="header__nav-list-text header__nav-list-text--nblue" href="./pages/menu.html">SHOP NOW</a></li>
+			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class = "hero__block">
-			<div class="hero__block__text-container">
-				<h1 class = "hero__block__title">Nitro Coffee</h1>
-				<p class = "hero__block__info">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of coffea species. </p>
-				<span class = "btn__style">SHOP NOW
-					<a href ="./pages/menu.html" class = "btn"></a>
+
+	<section class="hero flexbox flexbox--justifyC-sa flexbox--align-center">
+		<div class = "hero__text-block">
+			<h1 class = "hero__text-block-title">Nitro Coffee</h1>
+			<p class = "hero__text-block-desc">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of coffea species. </p>
+				<span class = "btn hero__text-block__btn">		
+					<a href ="./pages/menu.html" class = "btn-text">SHOP NOW
+</a>
 				</span>
-			</div>
-			<figure class="hero__block__img-container">
-			<img src="./Assets/coffeebeans-hero.png" alt="hero picture" class = "hero__block__img">
-			</figure>
 		</div>
-		<div class = "mc">
-			<h2 class = "mc__title">Our Products</h2>
-			<div class="mc__card-container">
-				<div class = "mc__card">
-					<img src="./Assets/coffeebeans.png" alt="coffee beans" class = "mc__card__img">
-					<p class = "mc__card__info">Coffee Beans</p>
-					<p class = "mc__card__price">$18.99</p>
-				</div>
-				<div class="mc__card">
-					<img src="./Assets/coldbrew.png" alt="cold brew" class = "mc__card__img mc__card__img--cold-brew">
-					<p class = "mc__card__info">Cold Brew</p>
-					<p class = "mc__card__price">$4.99</p>
-				</div>
-				<div class = "mc__card">
-					<img src="./Assets/inhousebrew.png" alt="in-house brew" class = "mc__card__img">
-					<p class = "mc__card__info">In-house Brew</p>
-					<p class = "mc__card__price">$2.99</p>
+			<img src="./assets/coffeebeans-hero.png" alt="hero picture" class = "hero__img">
+	</section>
+
+	<main class="mc flexboxC flexboxC--justifyC-se flexbox--align-center">
+		<h2 class = "mc__title">Our Products</h2>
+		<div class="mc__card flexbox flexbox--justifyC-c">
+			<div class = "mc__card-cont flexboxC flexboxC--justifyC-sb">
+				<figure class="mc__card-cont__img">
+					<img src="./assets/coffeebeans.png" alt="Coffee Beans">
+				</figure>
+				<div class="mc__card-cont__desc flexbox flexbox--justifyC-sb">
+					<div class = "mc__card-cont__desc-name ">Coffee Beans
+						<p class = "mc__card-cont__desc-name-qty">Pack of 3</p>
+					</div>
+					<p class = "mc__card-cont__desc-price">$19</p>
 				</div>
 			</div>
-			<span class = "btn__style btn__style--mc">VIEW ALL
-				<a href ="./pages/menu.html" class = "btn"></a>
-			</span>
+			<div class = "mc__card-cont flexboxC flexboxC--justifyC-sb">
+				<figure class="mc__card-cont__img">
+					<img src="./assets/coldbrew.png" alt="Cold Brew">
+				</figure>
+				<div class="mc__card-cont__desc flexbox flexbox--justifyC-sb">
+					<div class = "mc__card-cont__desc-name">Cold Brew
+						<p class = "mc__card-cont__desc-name-qty">1 can</p>
+					</div>
+					<p class = "mc__card-cont__desc-price">$5</p>
+				</div>
+			</div>
+			<div class = "mc__card-cont flexboxC flexboxC--justifyC-sb">
+				<figure class="mc__card-cont__img">
+					<img src="./assets/inhousebrew.png" alt="In-house Brew">
+				</figure>
+				<div class = "mc__card-cont__desc flexbox flexbox--justifyC-sb">
+					<div class = "mc__card-cont__desc-name">In-house Brew
+						<p class = "mc__card-cont__desc-name-qty">1 cup</p>
+					</div>
+					<p class = "mc__card-cont__desc-price">$3</p>
+				</div>
+			</div>
 		</div>
-			<div class = "mc__promo">
-				<h3 class = "mc__promo__info">Get 20% off your first order with code: <b>FirstNitro</b></h3>
-			</div>
+				<span class = "btn">
+					<a href ="./pages/menu.html" class = "btn-text">VIEW ALL</a>
+				</span>
+		</span>
 		</div>
 	</main>
-	<footer>
-		<div class = "ft">
-			<div class = "ft__info-block">
-				<h3 class = "ft__block-title">Address</h3>
-				<p class = "ft__info">503 Broadway Penthouse</p>
-				<p class = "ft__info">New York</p>
+
+	<section class="flexboxC flexboxC--justifyC-c">
+		<div class="dtl flexbox flexbox--justifyC-c">
+			<div class="dtl__info flexboxC">
+				<h3 class="dtl__info-title">We're Different</h3>
+				<p class="dtl__info-desc">
+					We grow and roast our own beans. Every bean, every cup,
+					every step of the way, we strive for excellence.
+				</p>
+				<figure class="dtl__info-icon flexbox flexbox--justifyC-sb">
+					<img src="./assets/planting.svg" alt="" srcset="">
+					<img src="./assets/coffee-beans.svg" alt="" srcset="">
+					<img src="./assets/coffee-cup.svg" alt="" srcset="">
+				</figure>
+				<span class = "btn">
+					<a href ="./pages/menu.html" class = "btn-text">LEARN MORE</a>
+				</span>
 			</div>
-		<div class = "ft__info-block">
+			<figure class="dtl__img">
+				<div class="dtl__img-cont">
+					<img src="./assets/tiltedcan.png" alt="Cold Brew">
+				</div>
+			</figure>
+		</div>
+		<div class = "dtl__promo">
+			<h3 class = "dtl__promo-info">Get 20% off your first order with code:</h3>
+			<p class="dtl__promo-code">FirstNitro</p>
+		</div>
+	</section>
+
+	<footer class="ft flexbox flexbox--justifyC-sb flexbox--align-center">
+		<figure class="ft__icon ft__icon-left">
+			<img src="./assets/coffee-beans-logo-and-footer.svg" alt="Cofee Beans">
+		</figure>
+		<div class = "ft__block">
+			<h3 class = "ft__block-title">Address</h3>
+			<p class = "ft__block-info">503 Broadway Penthouse</p>
+			<p class = "ft__block-info">New York</p>
+		</div>
+		<div class = "ft__block">
 			<h3 class = "ft__block-title">Hours</h3>
-			<p class = "ft__info"><b>Monday - Friday:</b> 9am - 7pm</p>
-			<p class = "ft__info"><b>Saturday - Sunday:</b> 10am - 5pm</p>
+			<div class="ft__block-box flexbox">
+				<p class = "ft__block-box__info--bold">Monday - Friday: </p>
+				<p class="ft__block-box__info">9am - 7pm</p>
+			</div>
+			<div class="ft__block-box flexbox">
+				<p class = "ft__block-box__info--bold">Saturday - Sunday: </p>
+				<p class="ft__block-box__info">10am - 5pm</p>
+			</div>
 		</div>
-		<div class = "ft__info-block">
+		<div class = "ft__block">
 			<h3 class = "ft__block-title">Social</h3>
-			<a href="https://Facebook.com"><img class = "ft__icon" src="./Assets/Facebook-Icon.svg" alt="facebook"></a>
-			<a href="https://Yelp.com"><img class = "ft__icon" src="./Assets/Yelp-Icon.svg" alt="yelp"></a>
-			<a href="https://Instagram.com"><img class = "ft__icon" src="./Assets/Instagram-Icon.svg" alt="instagram"></a>
+			<a href="https://Facebook.com"><img class = "ft__block-icon" src="./assets/Facebook-Icon.svg" alt="facebook"></a>
+			<a href="https://Yelp.com"><img class = "ft__block-icon" src="./assets/Yelp-Icon.svg" alt="yelp"></a>
+			<a href="https://Instagram.com"><img class = "ft__block-icon" src="./assets/Instagram-Icon.svg" alt="instagram"></a>
 		</div>
+		<figure class="ft__icon ft__icon-right">
+			<img src="./assets/coffee-beans-logo-and-footer.svg" alt="Cofee Beans">
+		</figure>
 	</footer>
+
 </body>
 </html>
